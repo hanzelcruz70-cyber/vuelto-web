@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es-NI">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Varias cajas en red · Vuelto</title>
+<meta name="description" content="Dos o más compus cobrando juntas con los mismos productos, clientes y facturas, por el router o el WiFi de la tienda, sin internet.">
+<meta name="theme-color" content="#0b5cad">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Varias cajas en red · Vuelto">
+<meta property="og:description" content="Dos o más compus cobrando juntas con los mismos productos, clientes y facturas, por el router o el WiFi de la tienda, sin internet.">
+<meta property="og:image" content="../../img/cobrar.png">
+<meta property="og:locale" content="es_NI">
+<link rel="icon" type="image/png" href="../../img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../estilos.css">
+<script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.tema = t; } catch {}</script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+<div class="progreso" aria-hidden="true"></div>
+<header class="barra">
+  <div class="contenedor barra-in">
+    <a class="marca" href="../../" aria-label="Vuelto, inicio"><span>V</span>Vuelto</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="../../funciones/">Funcionalidades</a>
+      <a href="../../negocios/">Negocios</a>
+      <a href="../../precios/">Precios</a>
+      <a href="../../info/" aria-current="page">Info</a>
+      <a href="../../contacto/">Contacto</a>
+    </nav>
+    <div class="acciones-barra">
+      <button class="icono-boton" type="button" data-cambiar-tema aria-label="Cambiar entre modo claro y oscuro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="boton boton-chico" href="../../info/descargas/">Descargar gratis <span class="flecha">→</span></a>
+      <button class="icono-boton solo-celular" type="button" data-menu aria-label="Abrir el menú" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<nav class="menu-celular" aria-label="Menú">
+  <a href="../../funciones/">Funcionalidades</a><a href="../../negocios/">Negocios</a><a href="../../precios/">Precios</a>
+  <a href="../../info/">Info y videos</a><a href="../../contacto/">Contacto</a><a class="boton" href="../../info/descargas/">Descargar gratis</a>
+</nav>
+
+<main id="contenido">
+<div class="contenedor info"><nav aria-label="Información"><p class="ceja">Información</p><a href="../../info/">Resumen</a><a href="../../info/manual/">Manual de usuario</a><a href="../../info/videos/">Videos</a><a href="../../info/descargas/">Descargas</a><a href="../../info/varias-cajas/" aria-current="page">Varias cajas en red</a><a href="../../info/dgi/">Facturas de la DGI</a><a href="../../info/seguridad/">Seguridad y respaldos</a></nav>
+<div>
+  <p class="ceja aparece">Varias cajas en red</p>
+  <h1 class="aparece">Dos o más cajas, una sola tienda</h1>
+  <p class="intro aparece">Una compu es la <b>principal</b> y guarda todo. Las demás cajas se conectan a ella por el router o el WiFi de la tienda y venden con los mismos productos, clientes, fiado y facturas. No hace falta internet.</p>
+  <h2 class="aparece" style="font-size:1.6rem;margin-top:36px">Cómo funciona</h2>
+  <div class="rejilla dos" data-escalonar style="margin-top:14px">
+    <div class="tarjeta"><h3>La principal guarda todo</h3><p>Es la compu donde quedan los datos y los respaldos. Las cajas trabajan con ella en vivo.</p></div>
+    <div class="tarjeta"><h3>Números que nunca se repiten</h3><p>Aunque dos cajas cobren en el mismo segundo, cada venta y cada factura tiene su número, y la existencia queda exacta.</p></div>
+    <div class="tarjeta"><h3>Cada caja con su dinero</h3><p>Cada caja se abre, se cuadra y se cierra aparte, con su propio fondo.</p></div>
+    <div class="tarjeta"><h3>Todo cifrado y solo en la tienda</h3><p>Las cajas se hablan con un código de 8 letras y números, y solo aceptan compus de la red de la tienda.</p></div>
+  </div>
+  <h2 class="aparece" style="font-size:1.6rem;margin-top:44px">Conectar una caja</h2>
+  <ol class="pasos" data-escalonar style="grid-template-columns:1fr;gap:14px;margin-top:14px">
+    <li><h3>En la principal</h3><p>Ajustes › Equipos y cajas › <b>Usar esta compu como caja principal</b>. Aparece un código, por ejemplo <code>K7P2-QX9M</code>. Si Windows pregunta, tocá <b>Permitir</b>.</p></li>
+    <li><h3>En la otra compu</h3><p>Instalá Vuelto y en la primera pantalla tocá <b>Esta compu es otra caja de una tienda que ya usa Vuelto</b>. Escribí el código y tocá Conectar: la encuentra sola.</p></li>
+    <li><h3>Listo</h3><p>Vuelto se reinicia como Caja 2 (la siguiente será Caja 3). Se entra con los mismos PIN de siempre.</p></li>
+  </ol>
+  <h2 class="aparece" style="font-size:1.6rem;margin-top:44px">¿Y si algo falla?</h2>
+  <details class="pregunta"><summary>Se apaga la principal</summary><div class="respuesta"><p>Las otras cajas muestran un aviso rojo y no cobran hasta que vuelva, para no inventar números de venta ni de factura. Se reconectan solas.</p></div></details>
+  <details class="pregunta"><summary>La principal se daña de verdad</summary><div class="respuesta"><p>Cada caja guarda una copia al día de los datos. Con el PIN de un dueño, una caja se convierte en la nueva principal y las demás la encuentran solas. Si la vieja se repara, avisa y ofrece volverse caja de la nueva.</p></div></details>
+  <details class="pregunta"><summary>¿Y tiendas en otra ciudad?</summary><div class="respuesta"><p>Para eso están las sucursales: cada una manda su resumen por WhatsApp o USB y la principal ve todo junto, también los traslados de mercadería.</p></div></details>
+</div>
+</div>
+
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-in">
+      <div>
+        <a class="marca" href="../../"><span>V</span>Vuelto</a>
+        <p style="margin-top:12px">El punto de venta para tiendas de Nicaragua: ventas, inventario, fiado, caja y facturas de la DGI, sin internet.</p>
+      </div>
+      <div><h4>Producto</h4><a href="../../funciones/">Funcionalidades</a><a href="../../negocios/">Negocios</a><a href="../../precios/">Precios</a><a href="../../info/descargas/">Descargar</a></div>
+      <div><h4>Ayuda</h4><a href="../../info/manual/">Manual de usuario</a><a href="../../info/videos/">Videos</a><a href="../../info/seguridad/">Seguridad</a><a href="../../contacto/">Contacto</a></div>
+      <div><h4>Red Informática</h4><span>Sébaco, Nicaragua</span><a href="https://wa.me/50589188813" rel="noopener" target="_blank">WhatsApp +505 8918-8813</a><a href="../../legal/privacidad/">Privacidad</a><a href="../../legal/terminos/">Términos de uso</a></div>
+    </div>
+    <div class="derechos"><span>© 2026 Red Informática. Todos los derechos reservados.</span><span>Hecho en Nicaragua 🇳🇮</span></div>
+  </div>
+</footer>
+<a class="dudas" href="../../contacto/">💬 ¿Dudas?</a>
+<script src="../../sitio.js" defer></script>
+</body>
+</html>

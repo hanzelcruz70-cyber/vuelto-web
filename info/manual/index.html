@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="es-NI">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de usuario · Vuelto</title>
+<meta name="description" content="Cómo se usa Vuelto, paso a paso: cobrar, inventario, fiado, caja, facturas de la DGI, varias cajas y respaldos.">
+<meta name="theme-color" content="#0b5cad">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Manual de usuario · Vuelto">
+<meta property="og:description" content="Cómo se usa Vuelto, paso a paso: cobrar, inventario, fiado, caja, facturas de la DGI, varias cajas y respaldos.">
+<meta property="og:image" content="../../img/cobrar.png">
+<meta property="og:locale" content="es_NI">
+<link rel="icon" type="image/png" href="../../img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="../../estilos.css">
+<script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.tema = t; } catch {}</script>
+</head>
+<body>
+<a class="saltar" href="#contenido">Ir al contenido</a>
+<div class="progreso" aria-hidden="true"></div>
+<header class="barra">
+  <div class="contenedor barra-in">
+    <a class="marca" href="../../" aria-label="Vuelto, inicio"><span>V</span>Vuelto</a>
+    <nav class="menu" aria-label="Principal">
+      <a href="../../funciones/">Funcionalidades</a>
+      <a href="../../negocios/">Negocios</a>
+      <a href="../../precios/">Precios</a>
+      <a href="../../info/" aria-current="page">Info</a>
+      <a href="../../contacto/">Contacto</a>
+    </nav>
+    <div class="acciones-barra">
+      <button class="icono-boton" type="button" data-cambiar-tema aria-label="Cambiar entre modo claro y oscuro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      <a class="boton boton-chico" href="../../info/descargas/">Descargar gratis <span class="flecha">→</span></a>
+      <button class="icono-boton solo-celular" type="button" data-menu aria-label="Abrir el menú" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+<nav class="menu-celular" aria-label="Menú">
+  <a href="../../funciones/">Funcionalidades</a><a href="../../negocios/">Negocios</a><a href="../../precios/">Precios</a>
+  <a href="../../info/">Info y videos</a><a href="../../contacto/">Contacto</a><a class="boton" href="../../info/descargas/">Descargar gratis</a>
+</nav>
+
+<main id="contenido">
+<div class="contenedor info"><nav aria-label="Información"><p class="ceja">Información</p><a href="../../info/">Resumen</a><a href="../../info/manual/" aria-current="page">Manual de usuario</a><a href="../../info/videos/">Videos</a><a href="../../info/descargas/">Descargas</a><a href="../../info/varias-cajas/">Varias cajas en red</a><a href="../../info/dgi/">Facturas de la DGI</a><a href="../../info/seguridad/">Seguridad y respaldos</a></nav><article class="doc"><p class="ceja">Manual de usuario · versión 0.7.0</p><h1>Cómo se usa Vuelto</h1>
+<p class="intro">Todo el programa, paso a paso. ¿Preferís verlo? Mirá los <a href="../videos/">videos</a>.</p><p>Este manual explica cómo usar Vuelto en la tienda, pantalla por pantalla. Si es tu primera vez, leé las secciones 1 a 6: con eso ya podés vender. Lo demás lo consultás cuando lo necesités.</p>
+<hr>
+<h2 id="1-antes-de-empezar">1. Antes de empezar</h2>
+<p><b>Lo que necesitás</b></p>
+<ul><li>
+Una computadora con Windows 10 u 11. Sirve una compu usada con 4 GB de memoria.
+</li><li>
+Opcional:
+<ul><li>
+un <b>lector de código de barras</b> USB (funciona como un teclado; no hay que configurarlo);
+</li><li>
+una <b>impresora térmica</b> de 58 u 80 mm con su programa (driver) instalado en Windows;
+</li><li>
+un <b>cajón de dinero</b> conectado a la impresora.
+</li></ul>
+</li><li>
+<b>No necesita internet para vender.</b> El internet solo se usa para las actualizaciones y para mandar mensajes por WhatsApp.
+ <b>La primera vez que se abre</b>
+</li></ul>
+<p>Vuelto pide unos datos de la tienda:</p>
+<ol><li>
+<b>Nombre de la tienda.</b> Es el que sale en el ticket.
+</li><li>
+<b>Tipo de negocio</b> (pulpería, minisúper, ferretería, farmacia, librería, ropa). Vuelto enciende solo las funciones que ese negocio usa.
+</li><li>
+<b>Tipo de cambio del día.</b>
+</li><li>
+<b>Impuestos:</b> <i>Cuota fija</i> o <i>IVA 15 %</i>.
+</li><li>
+<b>Tu nombre y tu PIN</b> de 4 números. Esa persona queda como <b>dueño</b> y puede hacer todo.
+</li></ol>
+<p>Después tocá <b>«Empezar a vender»</b>.</p>
+<p>&gt; ¿Querés probar antes? Tocá <b>«o probar primero con datos de ejemplo»</b>. Se carga una pulpería de ejemplo con productos, clientes y ventas. Los PIN de prueba son: Dueño <b>1234</b>, Ana <b>0000</b>.</p>
+<p><b>Licencia</b></p>
+<ul><li>
+Vuelto trae <b>15 días de prueba gratis</b>.
+</li><li>
+Para seguir usándolo, Red Informática te da una <b>clave de activación</b>. Ver la <a href="#licencia">sección 15</a>.
+</li></ul>
+<hr>
+<h2 id="2-entrar-al-programa">2. Entrar al programa</h2>
+<ol><li>
+Tocá tu nombre.
+</li><li>
+Escribí tu <b>PIN</b> de 4 números. Podés tocar los números en la pantalla o usar el teclado.
+</li><li>
+Para que entre otra persona, tocá <b>«👤 (tu nombre) · Cambiar»</b> arriba a la derecha.
+ <b>Si alguien se equivoca de PIN 5 veces seguidas</b>, ese usuario queda bloqueado <b>5 minutos</b>. Los demás pueden seguir entrando. Queda anotado en «Quién hizo qué».
+ <b>Dueño y cajero</b>
+</li><li>
+El <b>dueño</b> puede todo.
+</li><li>
+Al <b>cajero</b> el dueño le escoge qué puede hacer, en <a href="#usuarios">Ajustes › Usuarios</a>. Por ejemplo: fiar, hacer descuentos, devoluciones, cambiar productos, recibir compras, ver reportes o entrar a Ajustes.
+</li></ol>
+<hr>
+<h2 id="3-como-esta-ordenada-la-pantalla">3. Cómo está ordenada la pantalla</h2>
+<p><b>Barra de arriba</b></p>
+<ul><li>
+Nombre de la tienda.
+</li><li>
+Tipo de cambio (US$ 1 = C$ …).
+</li><li>
+Si la caja está abierta o cerrada.
+</li><li>
+<b>✓ Guardado:</b> cada venta se guarda al instante en la compu. Si se va la luz, no se pierde nada.
+</li><li>
+Avisos cuando hacen falta:
+<ul><li>
+«Prueba gratis: X días»;
+</li><li>
+«Licencia vence en X días»;
+</li><li>
+«⬆ Versión nueva lista».
+</li></ul>
+</li><li>
+<b>¿Cómo se usa?:</b> explica la pantalla en la que estás. Si hay video de ayuda, lo muestra. También tiene el botón para escribirle a Red Informática.
+ <b>Menú de la izquierda.</b> Algunas opciones solo aparecen si la persona tiene permiso.
+</li></ul>
+<table><thead><tr><th>Opción</th><th>Para qué</th></tr></thead><tbody><tr><td><b>Cobrar</b></td><td>Hacer las ventas</td></tr><tr><td><b>Ventas</b></td><td>Buscar tickets, reimprimir, devoluciones, cotizaciones, apartados y facturas</td></tr><tr><td><b>Productos</b></td><td>Lista de productos, existencias, precios, etiquetas, promociones</td></tr><tr><td><b>Compras</b></td><td>Pedido sugerido, recibir mercadería, proveedores</td></tr><tr><td><b>Fiado</b></td><td>Clientes, lo que deben, abonos</td></tr><tr><td><b>Caja</b></td><td>Abrir, meter o sacar dinero, cerrar caja</td></tr><tr><td><b>¿Cómo me fue?</b></td><td>Reportes de ventas y ganancia</td></tr><tr><td><b>Ajustes</b></td><td>Configuración de la tienda</td></tr></tbody></table>
+<hr>
+<h2 id="4-abrir-la-caja">4. Abrir la caja</h2>
+<p>Hay que abrir la caja antes de cobrar, todos los días:</p>
+<ol><li>
+Andá a <b>Caja</b>.
+</li><li>
+Escribí <b>con cuánto dinero empezás</b>: contá los billetes y monedas del cajón.
+</li><li>
+Escribí el <b>tipo de cambio de hoy</b>.
+</li><li>
+Tocá <b>«Abrir caja»</b>.
+</li></ol>
+<hr>
+<h2 id="5-cobrar">5. Cobrar</h2>
+<h3 id="agregar-productos">Agregar productos</h3>
+<ul><li>
+<b>Con el lector:</b> escaneá el código y el producto se agrega solo.
+</li><li>
+<b>Escribiendo:</b> basta con una parte del nombre y Enter. Por ejemplo, <code>coca 3</code> encuentra «Coca-Cola 3 L». Con las flechas <b>↑ ↓</b> escogés otro de la lista.
+</li><li>
+<b>Varias unidades de un solo:</b> escribí la cantidad, un asterisco y el nombre. Por ejemplo, <code>3*pan</code>.
+</li><li>
+<b>Botones rápidos:</b> arriba de la lista están los productos sin código (pan, hielo, tortillas, arroz…).
+</li><li>
+<b>Cambiar la cantidad:</b> usá <b>− / +</b> o escribí el número. Con <b>✕</b> se quita el producto.
+</li></ul>
+<h3 id="productos-que-preguntan-algo-al-agregarlos">Productos que preguntan algo al agregarlos</h3>
+<ul><li>
+<b>Venta suelta</b> (libra, media libra, quintal, cajilla, cigarro suelto…): escogé la presentación tocándola o con su número (1, 2, 3).
+</li><li>
+<b>Por metro, pie, yarda, libra o kilo:</b> escribí cuánto lleva.
+<ul><li>
+Si el cliente lo pide en otra medida, tocá esa medida y Vuelto convierte. Ejemplo: el cable se vende por metro, el cliente pide 10 pies, y Vuelto cobra 3.05 m.
+</li></ul>
+</li><li>
+<b>Tallas y colores:</b> escogé la combinación en la tabla. Cada cuadro dice cuántas quedan.
+</li><li>
+<b>Medicamento controlado:</b> al cobrar pide nombre del paciente, médico y número de receta. Se anota en el libro de controlados.
+</li></ul>
+<h3 id="precios-que-se-ponen-solos">Precios que se ponen solos</h3>
+<ul><li>
+<b>Mayoreo:</b> desde cierta cantidad, el producto baja de precio. Para un cliente mayorista, tocá <b>«Precio de mayoreo para este cliente»</b>.
+</li><li>
+<b>Promociones:</b> los combos, el «llevá 3 pagá 2» y los descuentos se aplican solos y salen en verde.
+</li><li>
+<b>Cliente con precio especial:</b> tocá <b>«👤 Cliente»</b> y escogelo. Sus precios se aplican solos (aparecen como «precio cliente»).
+</li></ul>
+<h3 id="descuentos">Descuentos</h3>
+<p>Tocá <b>«% Descuento»</b> (o <b>F6</b>):</p>
+<ol><li>
+Escogé si es para toda la venta o para un solo producto.
+</li><li>
+Escogé porcentaje o monto en córdobas.
+</li></ol>
+<p>Queda anotado quién lo hizo.</p>
+<h3 id="cobrar-f1">Cobrar (F1)</h3>
+<ol><li>
+Tocá los billetes que te dieron: <b>C$ 50, 100, 200, 500, 1000</b>, o <b>Exacto</b>.
+</li><li>
+Si pagan en <b>dólares</b>, tocá los billetes de US$. Vuelto calcula con el tipo de cambio del día.
+</li><li>
+Si pagan con <b>tarjeta o transferencia</b>, tocá ese botón: se llena con lo que falta.
+</li><li>
+Se puede <b>mezclar</b>: parte en efectivo, parte en dólares, parte en tarjeta.
+</li><li>
+Vuelto dice el <b>vuelto</b> en córdobas (y cuánto sería en dólares). Tocá <b>«Listo, cobrar»</b> o Enter.
+</li><li>
+Aparece el ticket. <b>«🖨 Imprimir ticket»</b> lo manda a la impresora. Si está configurado, el cajón se abre solo.
+</li></ol>
+<h3 id="fiar-f2">Fiar (F2)</h3>
+<p>Escogé el cliente, o escribí el nombre de uno nuevo. Vuelto avisa si se pasa de su límite: vos decidís si le fiás. Si es una empresa con días de crédito, dice cuándo vence.</p>
+<h3 id="otras-cosas-de-la-pantalla-de-cobro">Otras cosas de la pantalla de cobro</h3>
+<ul><li>
+<b>Atender a otro cliente</b> sin perder la venta: <b>«+ Otra venta»</b> (F3). Las ventas abiertas quedan en pestañas arriba.
+</li><li>
+<b>Cancelar la venta</b> antes de cobrar: <b>«Cancelar venta»</b> (Esc). Queda anotado en «Quién hizo qué».
+</li><li>
+Según el negocio, también aparecen:
+<ul><li>
+<b>📝 Cotizar:</b> guarda la venta como proforma; no cobra ni toca inventario.
+</li><li>
+<b>🧷 Apartar:</b> el cliente deja un abono y se lleva el producto cuando termina de pagar.
+</li><li>
+<b>📚 Listas:</b> agrega una lista escolar o un paquete completo.
+</li></ul>
+</li></ul>
+<hr>
+<h2 id="6-teclas-rapidas">6. Teclas rápidas</h2>
+<table><thead><tr><th>Tecla</th><th>Qué hace</th></tr></thead><tbody><tr><td><b>F1</b></td><td>Cobrar</td></tr><tr><td><b>F2</b></td><td>Fiar</td></tr><tr><td><b>F3</b></td><td>Otra venta (atender a otro cliente)</td></tr><tr><td><b>F4</b></td><td>Quitar el último producto</td></tr><tr><td><b>F6</b></td><td>Descuento</td></tr><tr><td><b>Esc</b></td><td>Cancelar la venta / cerrar ventana</td></tr><tr><td><b>Enter</b></td><td>Agregar el producto buscado / confirmar</td></tr><tr><td><b>↑ ↓</b></td><td>Moverse en la lista de búsqueda</td></tr></tbody></table>
+<hr>
+<h2 id="7-ventas-devoluciones-y-reimpresion">7. Ventas, devoluciones y reimpresión</h2>
+<p>En <b>Ventas</b>:</p>
+<ul><li>
+Buscás un ticket por <b>número</b> o por <b>producto</b>, y escogés el periodo (hoy, ayer, 7 días, este mes).
+</li><li>
+Al tocar una venta:
+<ul><li>
+<b>🖨 Reimprimir.</b>
+</li><li>
+<b>↩ Devolver productos:</b> escogés cuáles y por qué. El producto vuelve al inventario. El dinero sale de la caja, o se rebaja de la cuenta si era fiado.
+</li><li>
+<b>Cancelar venta:</b> devuelve todo.
+</li><li>
+<b>🔁 Cambiar por otra</b> (tiendas de ropa): devuelve la prenda y su valor queda como <b>saldo a favor</b> en una venta nueva. Si lo nuevo cuesta menos, Vuelto dice cuánto devolverle.
+</li></ul>
+</li></ul>
+<p>Solo el dueño, o quien tenga permiso, puede devolver. Todo queda anotado.</p>
+<p><b>Pestañas extra, según el negocio</b></p>
+<ul><li>
+<b>Cotizaciones:</b> proformas guardadas.
+<ul><li>
+<b>Convertir en venta</b> las pasa a Cobrar.
+</li><li>
+Se pueden imprimir o mandar por <b>WhatsApp</b>.
+</li></ul>
+</li><li>
+<b>Apartados:</b> lo que tienen separado los clientes.
+<ul><li>
+<b>Abonar:</b> entra a la caja.
+</li><li>
+<b>Entregar:</b> cuando ya pagaron todo.
+</li><li>
+<b>Cancelar:</b> el producto vuelve al inventario y escogés si devolvés el dinero.
+</li><li>
+<b>📲 Recordar:</b> le avisa al cliente por WhatsApp.
+</li></ul>
+</li><li>
+<b>Libro de controlados</b> (farmacia): las ventas con receta por mes, para imprimir.
+</li><li>
+<b>Facturas</b> (con la facturación de la DGI encendida): ver la <a href="#8-facturas-de-la-dgi">sección 8</a>.
+</li></ul>
+<hr>
+<h2 id="8-facturas-de-la-dgi">8. Facturas de la DGI</h2>
+<p>&gt; ⚠️ Para facturar desde Vuelto, la tienda necesita la <b>autorización de la DGI</b> para sistema de facturación computarizada (Disposición Técnica 09-2007). Mientras no la tenga, dejá la facturación <b>apagada</b>: el ticket dice «Este ticket no es factura». Red Informática te ayuda con la solicitud (<code>docs/solicitud-dgi.md</code>).</p>
+<p><b>Encenderla:</b> en <b>Ajustes › Facturación DGI</b>, llená:</p>
+<ol><li>
+razón social o nombre completo;
+</li><li>
+RUC;
+</li><li>
+número y fecha de autorización;
+</li><li>
+la <b>serie</b> (A, B, C… una por sucursal);
+</li><li>
+si venís de talonario, el <b>primer número</b>.
+</li></ol>
+<p>Después tocá <b>«Encender facturación»</b>.</p>
+<p><b>Cómo funciona</b></p>
+<ul><li>
+<b>Régimen IVA:</b> cada venta sale como <b>factura de contado</b> o <b>de crédito</b>, con el IVA 15 % aparte.
+</li><li>
+<b>Cuota fija:</b> la venta sale como ticket. Si el cliente pide factura, tocá <b>«🧾 Emitir factura»</b> y escribí su nombre y RUC (opcional). La factura no desglosa impuestos.
+</li><li>
+<b>Numeración:</b>
+<ul><li>
+es consecutiva y nunca se puede cambiar;
+</li><li>
+<b>contado</b> (<code>A-000001</code>) y <b>crédito</b> (<code>A-CR-000001</code>) llevan numeración separada.
+</li></ul>
+</li><li>
+<b>Impresión:</b> salen <b>original (cliente)</b> y <b>copia (archivo)</b>, con el número de autorización abajo a la derecha.
+</li><li>
+<b>Anular:</b> solo <b>el mismo día</b>, en Ventas › <b>Anular factura</b>. La factura queda guardada con la leyenda «ANULADA».
+</li><li>
+<b>Devoluciones de otros días:</b> se hace una <b>nota de crédito</b> numerada (<code>A-NC-000001</code>) y se imprime original y copia.
+</li><li>
+<b>Sin impresora o sin compu:</b> encendé <b>«Facturar con talonario»</b>. En cada venta escribís el número de la factura hecha a mano. Cuando todo vuelve a funcionar, lo apagás.
+</li><li>
+<b>Reporte:</b> <b>Ventas › Facturas</b>. Escogés el mes y tocás <b>🖨 Imprimir reporte</b> (facturado, IVA, anuladas, notas de crédito).
+</li><li>
+Las <b>cotizaciones</b> salen como «FACTURA PROFORMA – Sin valor fiscal».
+</li></ul>
+<hr>
+<h2 id="9-productos">9. Productos</h2>
+<p><b>Lista</b></p>
+<ul><li>
+Busca por nombre o código.
+</li><li>
+Los colores te dicen qué comprar: <b>verde</b> hay, <b>amarillo</b> poco (llegó al mínimo), <b>rojo</b> agotado.
+</li><li>
+Filtros: «Por agotarse», «Agotados» y, si manejás lotes, «Por vencer».
+ <b>Agregar un producto:</b> tocá <b>«+ Agregar producto»</b> y llená nombre, código (escanealo), precio y cuántos hay.
+ <b>Foto del producto:</b> en el formulario, tocá <b>«📷 Poner foto»</b> y escogé una imagen. Vuelto la achica sola. La foto sale en la lista, en los botones rápidos de Cobrar y en el verificador de precios. Con varias cajas, las demás la ven solas.
+ <b>Más opciones</b>
+</li><li>
+<b>Costo:</b> sirve para saber cuánto ganás.
+</li><li>
+<b>Departamento:</b> escogé uno o escribí uno nuevo.
+</li><li>
+<b>Se vende por:</b> unidad, libra, kilo, metro, pie o yarda.
+</li><li>
+<b>Avisarme cuando queden:</b> el mínimo.
+</li><li>
+<b>Botón rápido en Cobrar:</b> para productos sin código.
+</li><li>
+<b>Precio por mayoreo:</b> desde cuántas unidades y a qué precio.
+</li><li>
+<b>Controlar lotes y vencimiento</b> (farmacia).
+</li><li>
+<b>Medicamento controlado</b> (farmacia).
+</li><li>
+<b>Tiene tallas y colores</b> (ropa):
+<ol><li>
+Escribí las tallas y los colores separados por coma.
+</li><li>
+Tocá <b>«Armar tabla»</b>.
+</li><li>
+Poné cuántas hay de cada una y, si querés, su propio código.
+ <b>En cada producto</b>
+</li></ol>
+</li><li>
+<b>Historial:</b> todo lo que entró y salió, quién lo hizo y cuánto quedó.
+</li><li>
+<b>Ajustar:</b> corrige la existencia y pide el motivo (se venció, se dañó, consumo de la casa, error de conteo…).
+</li><li>
+<b>Editar:</b> cambia precios y datos. Los cambios de precio quedan anotados.
+ <b>Herramientas</b>
+</li><li>
+<b>💲 Cambiar precios:</b> sube o baja precios de un departamento entero. Puede ser por porcentaje, por córdobas o por «costo + ganancia», con redondeo. Te avisa si algo queda por debajo del costo.
+</li><li>
+<b>🏷 Etiquetas:</b> imprime etiquetas con código de barras, en la impresora de tickets o en hoja carta (30 por hoja). A los productos sin código les crea uno para que se puedan escanear.
+</li><li>
+<b>📄 Importar de Excel:</b>
+<ol><li>
+Descargá la plantilla (sale un Excel con los títulos y dos ejemplos).
+</li><li>
+Llenala en Excel: una fila por producto. Solo Nombre y Precio son obligatorios.
+</li><li>
+Subí el archivo <code>.xlsx</code> tal cual, o copiá las filas y pegalas.
+</li><li>
+Si es el formato viejo <code>.xls</code>, abrilo en Excel y guardalo como «Libro de Excel (.xlsx)».
+</li><li>
+Si el producto ya existe (mismo código o nombre), se actualiza en vez de duplicarse.
+</li></ol>
+</li><li>
+<b>📊 Exportar a Excel:</b> guarda todo el inventario en un Excel ya ordenado, con lo que vale a costo y a precio.
+</li><li>
+<b>🗑 Pérdidas y dañados:</b> escaneá lo que se venció, se dañó, se perdió o se consumió en la casa. Sale del inventario y queda en el reporte de pérdidas, a costo.
+</li><li>
+<b>Conteo físico:</b>
+<ol><li>
+Escogé qué contar.
+</li><li>
+Escribí lo que hay en los estantes. Se puede dejar a medias y seguir después.
+</li><li>
+Tocá <b>«Aplicar conteo»</b>. El sistema corrige las diferencias.
+</li></ol>
+</li><li>
+<b>Promociones:</b> el asistente crea combos, «llevá 3 pagá 2» o descuentos en %. Se pueden apagar o borrar.
+</li><li>
+<b>Listas y paquetes</b> (librería): arman listas escolares que en Cobrar se agregan completas. Si el cliente ya tiene algo, se pone en 0.
+</li></ul>
+<hr>
+<h2 id="10-compras-y-proveedores">10. Compras y proveedores</h2>
+<ul><li>
+<b>Pedido sugerido:</b> muestra lo que llegó al mínimo o se acaba en menos de una semana, con una cantidad que alcanza para unas dos semanas. Está agrupado por proveedor. Podés:
+<ul><li>
+<b>📲 Mandar por WhatsApp</b> al proveedor;
+</li><li>
+<b>🖨 Imprimir</b>;
+</li><li>
+cuando llegue, <b>«Ya llegó: recibir»</b>.
+</li></ul>
+</li><li>
+<b>Recibir mercadería:</b>
+<ol><li>
+Escaneá lo que llegó, como una venta al revés.
+</li><li>
+Poné la cantidad y el costo. Si el producto tiene tallas, por cada talla; si maneja lotes, con lote y vencimiento.
+</li><li>
+Escogé <b>de contado</b> (sale de la caja) o <b>al crédito</b> (le quedás debiendo al proveedor).
+</li><li>
+Con «Actualizar el costo» encendido, el costo queda como <b>costo promedio</b> entre lo que había y lo que llegó. Así la ganancia no salta cuando el proveedor cambia el precio.
+</li></ol>
+</li><li>
+<b>Proveedores:</b> cuánto le debés a cada uno y <b>Pagarle</b>.
+</li><li>
+<b>Devolver al proveedor:</b> si algo vino dañado, vencido o equivocado, escanealo aquí. Sale del inventario y se rebaja de lo que le debés (o, si no le debés nada, el dinero entra a la caja).
+</li><li>
+<b>Lo que he comprado:</b> historial de compras y devoluciones.
+</li></ul>
+<hr>
+<h2 id="11-fiado-y-clientes">11. Fiado y clientes</h2>
+<ul><li>
+Cada cliente muestra <b>cuánto debe</b>, desde cuándo, su límite y si pasó el límite.
+</li><li>
+<b>Abonar:</b> escribí cuánto paga. Si la caja está abierta, el dinero entra a la caja. Sale el <b>recibo de abono</b> para imprimir.
+</li><li>
+<b>Ver cuenta:</b> todo lo que se llevó y abonó.
+<ul><li>
+<b>🖨 Estado de cuenta (hoja carta):</b> sirve sobre todo para empresas.
+</li><li>
+<b>📲 Mandar por WhatsApp.</b>
+</li></ul>
+</li><li>
+<b>📲 Recordar por WhatsApp:</b> abre WhatsApp con un mensaje amable listo; vos solo le das Enviar. <b>«Recordar a los que deben»</b> muestra a todos, ordenados por los que deben desde hace más tiempo.
+</li><li>
+<b>⭐ Puntos para clientes frecuentes</b> (se enciende en Ajustes › Mi tienda): cada compra suma puntos (1 punto por cada C$ 100, se puede cambiar) cuando escogés el cliente con <b>👤 Cliente</b> o le fiás. Al cobrar aparece <b>«⭐ Usar N puntos»</b> para pagar parte con ellos. Los puntos de cada cliente salen en su tarjeta.
+</li><li>
+<b>Cliente nuevo / Editar:</b>
+<ul><li>
+nombre, teléfono y hasta cuánto le fiás;
+</li><li>
+con «Precio por cliente y empresas» encendido, también:
+<ul><li>
+<b>Empresa:</b> RUC, contacto y días de crédito. Vuelto marca lo <b>vencido</b>.
+</li><li>
+<b>Precio especial:</b> descuento en todo, o precio fijo para ciertos productos.
+</li></ul>
+</li></ul>
+</li></ul>
+<hr>
+<h2 id="12-caja-entradas-salidas-y-cierre">12. Caja: entradas, salidas y cierre</h2>
+<ul><li>
+<b>Debe haber en el cajón:</b> lo que empezaste, más las ventas en efectivo, abonos y entradas, menos las salidas.
+</li><li>
+<b>⬇ Meter dinero / ⬆ Sacar dinero:</b> siempre anotá para qué (pago al proveedor, cambio de billetes…).
+</li><li>
+<b>📱 Recarga o servicio:</b> anota las recargas Claro y Tigo, la luz y el agua para que cuadre la caja. No se conecta con las compañías.
+</li><li>
+<b>🔓 Abrir cajón:</b> abre el cajón sin venta. Queda anotado quién lo abrió.
+</li><li>
+<b>Lo que entró y salió:</b> lista con hora y persona.
+</li><li>
+<b>Cerrar caja:</b>
+<ol><li>
+Contá los billetes y monedas.
+</li><li>
+Contá los dólares.
+</li><li>
+Vuelto dice si <b>cuadra, sobra o falta</b>.
+</li><li>
+Sale el <b>reporte de cierre</b> por cajero para imprimir y firmar.
+</li></ol>
+</li></ul>
+<hr>
+<h2 id="13-como-me-fue">13. ¿Cómo me fue?</h2>
+<ul><li>
+Escogé <b>hoy, ayer, últimos 7 días o este mes</b>.
+</li><li>
+Muestra:
+<ul><li>
+cuánto <b>vendiste</b>, cuánto <b>ganaste</b>, cuántas ventas hubo y el promedio, y cuánto <b>fiaste</b>;
+</li><li>
+ventas por hora o por día;
+</li><li>
+lo más vendido;
+</li><li>
+ventas por cajero y por departamento;
+</li><li>
+cómo te pagaron;
+</li><li>
+lo que se está acabando;
+</li><li>
+lo que está por vencer.
+</li></ul>
+</li><li>
+Pestañas de arriba:
+<ul><li>
+<b>Ganancia por producto:</b> cuánto vendiste, cuánto te costó y el margen de cada producto.
+</li><li>
+<b>Pérdidas:</b> lo vencido, dañado, perdido o consumido, a costo y por motivo.
+</li><li>
+<b>Quitados del ticket:</b> productos que se agregaron a una venta y se quitaron antes de cobrar, por cajero. Muchos quitados de la misma persona merecen una conversación.
+</li><li>
+<b>Deudas a proveedores:</b> cuánto le debés a cada uno y desde cuándo.
+</li><li>
+<b>Sucursales</b>, si la tienda tiene (<a href="#14-sucursales">sección 14</a>).
+</li></ul>
+</li><li>
+Las ventas de hace más de 6 meses no se cargan al abrir, para que el programa siga rápido con los años. Un ticket viejo se busca por su número en Ventas (<b>«🔎 Buscar el ticket en las ventas viejas»</b>).
+ <b>📊 Exportar a Excel:</b> está en Productos, Ventas, Compras (en «Lo que he comprado»), Fiado, ¿Cómo me fue? y Facturas. Sale un Excel con formato: título con el nombre de la tienda, montos en córdobas, totales al final y filtros en los títulos. El de «¿Cómo me fue?» trae varias hojas: resumen, por producto, por departamento, por cajero y todas las ventas.
+</li></ul>
+<hr>
+<h2 id="14-sucursales">14. Sucursales</h2>
+<p>Para un dueño con varias tiendas. Funciona <b>sin internet</b>, mandando archivos.</p>
+<p><b>Configurar</b>, en <b>Ajustes › Sucursales</b> de cada tienda:</p>
+<ul><li>
+un <b>código</b> distinto (S1, S2…) y el <b>nombre</b>;
+</li><li>
+en la principal, encendé <b>«Es la tienda principal»</b> y tocá <b>Generar</b> para crear la <b>clave de enlace</b>;
+</li><li>
+escribí <b>esa misma clave</b> en todas las sucursales.
+ <b>Todos los días</b>
+</li><li>
+Cada sucursal entra a <b>¿Cómo me fue? › Sucursales</b>, toca <b>«📤 Enviar resumen»</b> y guarda el archivo.
+</li><li>
+Lo manda a la principal por WhatsApp, correo o USB.
+</li><li>
+En la principal, <b>«📥 Abrir archivo recibido»</b>. Aparecen las ventas, la ganancia y el fiado de cada sucursal y de todas juntas, y se puede buscar cuánto hay de un producto en cada una.
+ <b>Pasar mercadería</b>
+</li><li>
+<b>«🚚 Enviar mercadería»</b>: escogé la sucursal y los productos. Sale de la existencia de aquí y se guarda un archivo.
+</li><li>
+La otra sucursal lo abre con <b>«Abrir archivo recibido»</b> y se le suma.
+</li></ul>
+<p>Un traslado <b>no se puede aplicar dos veces</b>. Si alguien cambia un archivo, o es de otro dueño, se <b>rechaza</b>.</p>
+<hr>
+<h2 id="15-ajustes">15. Ajustes</h2>
+<p><b>Mi tienda</b></p>
+<ul><li>
+Nombre, dirección y teléfono para el ticket.
+</li><li>
+<b>Logo</b> del ticket.
+</li><li>
+<b>Tipo de negocio</b>.
+</li><li>
+<b>Impuestos:</b> cuota fija o IVA 15 %.
+</li><li>
+Tipo de cambio.
+</li><li>
+<b>Funciones:</b> fiado, venta suelta, dólares, y las de cada tipo de negocio. Se pueden encender y apagar una por una (<a href="#17-funciones-según-el-tipo-de-negocio">sección 17</a>).
+ <b>Usuarios</b>
+</li><li>
+Agregar personas, cada una con su PIN.
+</li><li>
+Perfil <b>Dueño</b> (todo) o <b>Cajero</b>, y las casillas de lo que el cajero puede hacer.
+ <b>Equipos y cajas</b>
+</li><li>
+<b>Impresora de tickets:</b>
+<ul><li>
+escogela de la lista y usá <b>«🖨 Imprimir prueba»</b>;
+</li><li>
+tamaño del papel: 58 u 80 mm.
+</li></ul>
+</li><li>
+<b>Cajón:</b>
+<ul><li>
+<b>«🔓 Probar cajón»</b>;
+</li><li>
+<b>«Abrir el cajón al cobrar en efectivo»</b>.
+</li></ul>
+</li><li>
+<b>Báscula conectada:</b> ⚠️ <i>todavía no disponible</i>. Por ahora, al vender por libra o kilo se escribe el peso a mano.
+</li><li>
+<b>Impresora y cajón son de cada compu:</b> si hay varias cajas, cada una escoge los suyos.
+</li><li>
+<b>Varias cajas en red:</b> dos o más compus cobran juntas con los mismos productos, clientes, fiado y facturas. No hace falta internet: basta el router o el WiFi de la tienda.
+<ol><li>
+En la compu que va a guardar todo (la <b>principal</b>), tocá <b>«Usar esta compu como caja principal»</b>. Aparece un <b>código</b> de 8 letras y números, por ejemplo <code>K7P2-QX9M</code>. Si Windows pregunta si Vuelto puede usar la red, tocá <b>Permitir</b>.
+</li><li>
+En la otra compu, instalá Vuelto. En la primera pantalla tocá <b>«🖥 Esta compu es otra caja de una tienda que ya usa Vuelto»</b>, escribí el código y tocá <b>Conectar</b>. La encuentra sola; si no, tocá «Escribir la dirección» y poné la que sale en la principal.
+</li><li>
+Vuelto se reinicia y queda como <b>Caja 2</b> (la siguiente será Caja 3…). Se entra con el mismo PIN de siempre.
+</li><li>
+Cada caja tiene <b>su propia caja de dinero</b>: se abre, se cuadra y se cierra aparte. Los tickets dicen de qué caja salieron.
+</li><li>
+Los números de venta y de factura <b>nunca se repiten</b>, aunque dos cajas cobren en el mismo segundo.
+</li><li>
+<b>Si la principal se apaga</b>, las otras cajas muestran un aviso rojo y <b>no cobran</b> hasta que vuelva (así no se inventan números de factura). Se reconectan solas.
+</li><li>
+Los respaldos los hace la principal.
+</li><li>
+<b>Cambiar código</b> desconecta a todas las cajas (útil si alguien que no debe conoce el código).
+</li><li>
+<b>Si la principal se daña</b> (se quemó, no enciende): cada caja guarda una copia al día de los datos. En la caja, Ajustes › Equipos y cajas › <b>«La principal se dañó: convertir esta caja en principal»</b> y el PIN de un dueño. Esa caja pasa a ser la principal y las demás la encuentran solas. Si la principal vieja se repara y se enciende, avisa que hay otra y ofrece <b>«Volverme caja de esa principal»</b>.
+ <b>Celular y verificador</b>
+</li></ol>
+</li><li>
+<b>Videos de ayuda:</b> cada pantalla trae su video corto en «¿Cómo se usa?». Para cambiarlo, poné el tuyo en la carpeta de videos con el nombre de la pantalla (<code>cobrar.mp4</code>, <code>ventas.webm</code>…).
+</li><li>
+<b>Ver el negocio desde el celular:</b> encendé <b>Activar</b> y escaneá el código QR con el celular conectado al <b>WiFi de la tienda</b>. Ves lo vendido y ganado hoy, la caja, lo que se acaba, quién te debe y las últimas ventas. Pide tu PIN de dueño. Fuera de la tienda no funciona (eso necesitaría un servidor en internet). <b>Cambiar la dirección</b> deja sin acceso a los celulares que ya la tenían.
+</li><li>
+<b>Verificador de precios:</b> convierte una compu o tablet en una pantalla donde el cliente escanea y ve el precio. Para salir hace falta el PIN del dueño.
+ <b>Respaldos:</b> ver la <a href="#16-respaldos-que-no-se-pierda-nada">sección 16</a>.
+ <b>Facturación DGI:</b> ver la <a href="#8-facturas-de-la-dgi">sección 8</a>.
+ <b>Sucursales:</b> ver la <a href="#14-sucursales">sección 14</a>.
+ <b>Quién hizo qué:</b> es el registro de todo lo delicado. Incluye:
+</li><li>
+ventas canceladas sin cobrar;
+</li><li>
+descuentos;
+</li><li>
+cambios de precio;
+</li><li>
+cajón abierto sin venta;
+</li><li>
+apertura y cierre de caja;
+</li><li>
+inventario;
+</li><li>
+usuarios;
+</li><li>
+facturas;
+</li><li>
+intentos de PIN equivocados.
+</li></ul>
+<p>Se filtra por persona, tipo y fecha. <b>Nadie lo puede borrar</b> desde el programa.</p>
+<p><b>Licencia</b></p>
+<ul><li>
+Muestra el estado: prueba, activa, por vencer o vencida.
+</li><li>
+Muestra el <b>código de esta compu</b>: tocá <b>Copiar</b> y mandáselo a Red Informática.
+</li><li>
+Para activar o renovar, pegá la clave que te mandan (empieza con <code>VUELTO-</code>) y tocá <b>Activar</b>.
+</li><li>
+Si la mensualidad vence, hay <b>7 días de gracia</b>. Después se bloquea el cobro hasta renovar, pero <b>tus datos no se tocan</b>.
+ <b>Acerca de Vuelto</b>
+</li><li>
+Versión del programa y contacto.
+</li><li>
+<b>Buscar actualizaciones.</b> Las versiones nuevas se bajan solas y se instalan <b>al cerrar Vuelto</b>, con un respaldo antes. Si querés hacerlo ya, tocá <b>«Reiniciar e instalar ahora»</b> (no funciona si hay una venta abierta).
+</li></ul>
+<hr>
+<h2 id="16-respaldos-que-no-se-pierda-nada">16. Respaldos: que no se pierda nada</h2>
+<ul><li>
+Vuelto hace <b>un respaldo automático cada día</b> y guarda los últimos 30.
+</li><li>
+<b>Copia extra en USB:</b> en Ajustes › Respaldos, tocá <b>«Escoger…»</b> y elegí la USB o una carpeta. Cada respaldo se copia ahí también. <b>Recomendado</b>, por si se daña la compu.
+</li><li>
+<b>Respaldo en internet, gratis:</b> si la compu tiene <b>OneDrive</b> (viene con Windows) o <b>Google Drive</b>, aparece el botón <b>«☁ Usar OneDrive»</b> o <b>«☁ Usar Google Drive»</b>. Tocalo y la copia extra se sube sola a internet. Así, aunque se roben o se queme la compu, los datos están a salvo.
+<ul><li>
+Hay que entrar a OneDrive o Google Drive con tu correo una vez. Si no aparece el botón, Vuelto te explica qué instalar.
+</li><li>
+Se guardan solo los últimos 30 respaldos, para no llenar el espacio gratis.
+</li></ul>
+</li><li>
+<b>Respaldar ahora:</b> hace un respaldo en el momento.
+</li><li>
+<b>Restaurar un respaldo:</b> escogé el archivo. Antes se guarda una copia de cómo está ahora y el programa se reinicia.
+</li><li>
+<b>Si se va la luz:</b> cada venta se guarda al instante. Al volver, todo está ahí.
+</li></ul>
+<hr>
+<h2 id="17-funciones-segun-el-tipo-de-negocio">17. Funciones según el tipo de negocio</h2>
+<p>Se encienden solas al escoger el tipo de negocio. Se pueden cambiar en <b>Ajustes › Mi tienda › Para tu tipo de negocio</b>.</p>
+<table><thead><tr><th>Negocio</th><th>Funciones</th></tr></thead><tbody><tr><td>Pulpería</td><td>Las básicas: venta suelta, fiado, dólares</td></tr><tr><td>Minisúper</td><td>Precio por cliente y empresas con crédito, puntos para clientes frecuentes</td></tr><tr><td>Ferretería</td><td>Cotizaciones, apartados, precio por cliente, venta por metro, pie o yarda</td></tr><tr><td>Farmacia</td><td>Lotes y vencimientos, medicamento controlado</td></tr><tr><td>Librería</td><td>Listas escolares y paquetes, cotizaciones</td></tr><tr><td>Ropa y zapatos</td><td>Tallas y colores, apartados, cambio de prenda</td></tr></tbody></table>
+<hr>
+<h2 id="18-problemas-comunes">18. Problemas comunes</h2>
+<table><thead><tr><th>Pasa esto</th><th>Hacé esto</th></tr></thead><tbody><tr><td>«Primero abrí la caja» al cobrar</td><td>Andá a Caja › Abrir caja.</td></tr><tr><td>No imprime</td><td>En Ajustes › Equipos revisá que esté escogida la impresora y tocá «Imprimir prueba». Revisá que esté encendida y con papel.</td></tr><tr><td>El cajón no se abre</td><td>Tiene que estar conectado a la impresora y la impresora escogida en Ajustes. Probá con «Probar cajón».</td></tr><tr><td>El lector no agrega el producto</td><td>El código no está registrado: buscá el producto por nombre, tocá Editar y escaneá el código en «Código de barras».</td></tr><tr><td>«Ojo: según el sistema ya no hay…»</td><td>Se vende igual. Revisá la existencia con Ajustar o un conteo físico.</td></tr><tr><td>Un cajero no ve una pantalla</td><td>El dueño le da permiso en Ajustes › Usuarios.</td></tr><tr><td>Usuario bloqueado por PIN</td><td>Esperá 5 minutos, o que entre otra persona.</td></tr><tr><td>«Prueba gratis» o «Licencia vencida»</td><td>Mandá el código de la compu (Ajustes › Licencia) a Red Informática.</td></tr><tr><td>Windows dice «Windows protegió su PC» al instalar</td><td>Tocá «Más información» y luego «Ejecutar de todas formas». El instalador es seguro: viene de Red Informática.</td></tr><tr><td>Se dañó la compu</td><td>Instalá Vuelto en otra y en Ajustes › Respaldos tocá «Restaurar un respaldo». Escogé el último de la USB.</td></tr></tbody></table>
+<hr>
+<p><b>Soporte:</b> Red Informática · Sébaco · WhatsApp <b>+505 8918-8813</b></p></article></div>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-in">
+      <div>
+        <a class="marca" href="../../"><span>V</span>Vuelto</a>
+        <p style="margin-top:12px">El punto de venta para tiendas de Nicaragua: ventas, inventario, fiado, caja y facturas de la DGI, sin internet.</p>
+      </div>
+      <div><h4>Producto</h4><a href="../../funciones/">Funcionalidades</a><a href="../../negocios/">Negocios</a><a href="../../precios/">Precios</a><a href="../../info/descargas/">Descargar</a></div>
+      <div><h4>Ayuda</h4><a href="../../info/manual/">Manual de usuario</a><a href="../../info/videos/">Videos</a><a href="../../info/seguridad/">Seguridad</a><a href="../../contacto/">Contacto</a></div>
+      <div><h4>Red Informática</h4><span>Sébaco, Nicaragua</span><a href="https://wa.me/50589188813" rel="noopener" target="_blank">WhatsApp +505 8918-8813</a><a href="../../legal/privacidad/">Privacidad</a><a href="../../legal/terminos/">Términos de uso</a></div>
+    </div>
+    <div class="derechos"><span>© 2026 Red Informática. Todos los derechos reservados.</span><span>Hecho en Nicaragua 🇳🇮</span></div>
+  </div>
+</footer>
+<a class="dudas" href="../../contacto/">💬 ¿Dudas?</a>
+<script src="../../sitio.js" defer></script>
+</body>
+</html>
