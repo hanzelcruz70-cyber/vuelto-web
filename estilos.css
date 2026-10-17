@@ -182,8 +182,8 @@ h1 em, .grande em, .titulo-serif em { font-style: italic; color: var(--acento); 
 .plan { position: relative; display: flex; flex-direction: column; text-align: left; }
 .plan.destacada { border: 2px solid var(--acento); box-shadow: 0 30px 60px -30px var(--acento); }
 .plan .sello { position: absolute; top: -13px; left: 26px; background: var(--acento); color: #fff; font-size: .75rem; font-weight: 700; border-radius: 999px; padding: 3px 12px; }
-.precio { display: flex; align-items: baseline; gap: 8px; margin: 6px 0 4px; }
-.precio b { font-family: var(--serif); font-weight: 500; font-size: 3rem; letter-spacing: -.03em; transition: opacity .25s; }
+.precio { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 8px; margin: 6px 0 4px; }
+.precio b { font-family: var(--serif); font-weight: 500; font-size: clamp(2.3rem, 4vw, 3rem); white-space: nowrap; letter-spacing: -.03em; transition: opacity .25s; }
 .precio span { color: var(--suave); }
 .plan .checks { flex: 1; margin-bottom: 20px; }
 .tabla { width: 100%; border-collapse: collapse; background: var(--fondo-2); border: 1px solid var(--borde); border-radius: var(--radio); overflow: hidden; }
