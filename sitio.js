@@ -1,4 +1,4 @@
-// Vuelto · sitio web: tema claro/oscuro, menú del celular, animaciones al bajar, pantalla 3D, avisos,
+// Clerk Digital · sitio web: tema claro/oscuro, menú del celular, animaciones al bajar, pantalla 3D, avisos,
 // carruseles, contador de números, precios mensual/anual, videos y formulario de contacto (abre WhatsApp).
 (() => {
   const raiz = document.documentElement;
