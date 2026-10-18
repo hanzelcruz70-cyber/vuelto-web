@@ -93,7 +93,7 @@
   if (vp) { if (sinMovimiento) vp.removeAttribute('autoplay'); new IntersectionObserver(es => es.forEach(e => e.isIntersecting && !sinMovimiento ? vp.play().catch(() => {}) : vp.pause())).observe(vp); }
 
   /* video en ventana (botón «Ver el video») */
-  const base = new URL('.', document.querySelector('script[src$="sitio.js"]').src).href;
+  const base = new URL('.', document.querySelector('script[src*="sitio.js"]').src).href;
   const dlg = document.querySelector('.ventana-video');
   document.querySelectorAll('[data-video-abrir]').forEach(b => b.addEventListener('click', () => {
     const v = dlg.querySelector('video'); v.src = base + 'videos/' + b.dataset.videoAbrir + '.webm'; dlg.showModal(); v.play().catch(() => {});
