@@ -111,12 +111,13 @@
     if (info) info.textContent = 'Windows 10 u 11 · versión ' + r.tag_name.replace(/^v/, '') + ' · ' + Math.round(a.size / 1048576) + ' MB';
   }).catch(() => {});
 
-  /* formulario de contacto: arma el mensaje y abre WhatsApp (el sitio no guarda nada) */
+  /* formulario de contacto: arma el correo y lo abre en el programa de correo de la persona (el sitio no guarda nada) */
   const f = document.querySelector('[data-contacto]');
   f?.addEventListener('submit', e => {
     e.preventDefault();
     const d = new FormData(f), v = k => String(d.get(k) || '').trim();
-    const texto = `Hola, soy ${v('nombre')}${v('tienda') ? ' de ' + v('tienda') : ''}${v('ciudad') ? ' (' + v('ciudad') + ')' : ''}.\nTipo de negocio: ${v('negocio')}.\nMe interesa: ${v('interes')}.\n${v('mensaje')}`;
-    open('https://wa.me/50589188813?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+    const asunto = `Clerk Digital: ${v('interes')}${v('tienda') ? ' · ' + v('tienda') : ''}`;
+    const texto = `Hola, soy ${v('nombre')}${v('tienda') ? ' de ' + v('tienda') : ''}${v('ciudad') ? ' (' + v('ciudad') + ')' : ''}.\nTipo de negocio: ${v('negocio')}.\nMe interesa: ${v('interes')}.${v('telefono') ? '\nMi WhatsApp o teléfono: ' + v('telefono') : ''}\n\n${v('mensaje')}`;
+    location.href = 'mailto:redinformaticatotal@gmail.com?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(texto);
   });
 })();
