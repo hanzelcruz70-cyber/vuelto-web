@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="../estilos.css?v=3cbcacf7">
+<link rel="stylesheet" href="../estilos.css?v=46f89e4a">
 <script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.tema = t; } catch {}</script>
 </head>
 <body>
@@ -59,16 +59,19 @@
     </div>
     <form class="tarjeta aparece der" data-contacto style="padding:30px">
       <h3 style="font-size:1.4rem">Escribinos</h3>
-      <p class="suave" style="margin-bottom:20px">Al tocar «Enviar» se abre tu correo con el mensaje listo para mandarlo a <b>redinformaticatotal@gmail.com</b>. Esta página no guarda nada.</p>
+      <p class="suave" style="margin-bottom:20px">Tu mensaje nos llega al correo y te respondemos por WhatsApp o por correo, como prefierás.</p>
       <div class="dos-campos"><div class="campo"><label for="c-nombre">Tu nombre</label><input id="c-nombre" name="nombre" required autocomplete="name"></div>
         <div class="campo"><label for="c-tienda">Nombre de la tienda</label><input id="c-tienda" name="tienda" autocomplete="organization"></div></div>
       <div class="dos-campos"><div class="campo"><label for="c-negocio">Tipo de negocio</label><select id="c-negocio" name="negocio"><option>Pulpería</option><option>Minisúper</option><option>Ferretería</option><option>Farmacia</option><option>Librería</option><option>Ropa y zapatos</option><option>Otro</option></select></div>
         <div class="campo"><label for="c-ciudad">Ciudad</label><input id="c-ciudad" name="ciudad" autocomplete="address-level2"></div></div>
-      <div class="campo"><label for="c-telefono">Tu WhatsApp o teléfono (opcional)</label><input id="c-telefono" name="telefono" type="tel" autocomplete="tel"></div>
+      <div class="dos-campos"><div class="campo"><label for="c-telefono">Tu WhatsApp o teléfono</label><input id="c-telefono" name="telefono" type="tel" autocomplete="tel"></div>
+        <div class="campo"><label for="c-email">Tu correo (opcional)</label><input id="c-email" name="email" type="email" autocomplete="email"></div></div>
+      <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
       <div class="campo"><label for="c-interes">Me interesa</label><select id="c-interes" name="interes"><option>Saber los precios</option><option>Una demostración</option><option>Que me lo instalen en la tienda</option><option>Varias cajas o sucursales</option><option>Soporte (ya lo uso)</option></select></div>
       <div class="campo"><label for="c-mensaje">Mensaje</label><textarea id="c-mensaje" name="mensaje" placeholder="Contanos de tu tienda"></textarea></div>
-      <button class="boton boton-grande" type="submit" style="width:100%">Enviar por correo <span class="flecha">→</span></button>
-      <p class="suave" style="margin:12px 0 0;font-size:.9rem">¿No se abrió tu correo? Escribinos directo a <a href="mailto:redinformaticatotal@gmail.com">redinformaticatotal@gmail.com</a>.</p>
+      <button class="boton boton-grande" type="submit" style="width:100%">Enviar mensaje <span class="flecha">→</span></button>
+      <p class="aviso-form" data-aviso hidden role="status"></p>
+      <p class="suave" style="margin:12px 0 0;font-size:.9rem">También podés escribirnos a <a href="mailto:redinformaticatotal@gmail.com">redinformaticatotal@gmail.com</a>.</p>
     </form>
   </div>
 </section>
@@ -93,6 +96,6 @@
   </div>
 </footer>
 <a class="dudas" href="../contacto/">¿Dudas?</a>
-<script src="../sitio.js?v=cbf28646" defer></script>
+<script src="../sitio.js?v=2168765a" defer></script>
 </body>
 </html>

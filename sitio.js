@@ -1,5 +1,5 @@
 // Clerk Digital · sitio web: tema claro/oscuro, menú del celular, animaciones al bajar, pantalla 3D, avisos,
-// carruseles, contador de números, precios mensual/anual, videos y formulario de contacto (abre WhatsApp).
+// carruseles, contador de números, precios mensual/anual, videos y formulario de contacto (Formspree).
 (() => {
   const raiz = document.documentElement;
   const sinMovimiento = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -111,13 +111,27 @@
     if (info) info.textContent = 'Windows 10 u 11 · versión ' + r.tag_name.replace(/^v/, '') + ' · ' + Math.round(a.size / 1048576) + ' MB';
   }).catch(() => {});
 
-  /* formulario de contacto: arma el correo y lo abre en el programa de correo de la persona (el sitio no guarda nada) */
+  /* formulario de contacto: se manda por Formspree y llega al correo de Red Informática.
+     Si falla (sin internet, Formspree caído), se ofrece mandarlo desde el correo de la persona. */
+  const FORMSPREE = 'https://formspree.io/f/mdeajlnk';
   const f = document.querySelector('[data-contacto]');
-  f?.addEventListener('submit', e => {
+  f?.addEventListener('submit', async e => {
     e.preventDefault();
     const d = new FormData(f), v = k => String(d.get(k) || '').trim();
     const asunto = `Clerk Digital: ${v('interes')}${v('tienda') ? ' · ' + v('tienda') : ''}`;
     const texto = `Hola, soy ${v('nombre')}${v('tienda') ? ' de ' + v('tienda') : ''}${v('ciudad') ? ' (' + v('ciudad') + ')' : ''}.\nTipo de negocio: ${v('negocio')}.\nMe interesa: ${v('interes')}.${v('telefono') ? '\nMi WhatsApp o teléfono: ' + v('telefono') : ''}\n\n${v('mensaje')}`;
-    location.href = 'mailto:redinformaticatotal@gmail.com?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(texto);
+    const boton = f.querySelector('button[type="submit"]'), aviso = f.querySelector('[data-aviso]'), antes = boton.innerHTML;
+    d.append('_subject', asunto);
+    boton.disabled = true; boton.textContent = 'Enviando…'; aviso.hidden = true;
+    try {
+      const r = await fetch(FORMSPREE, { method: 'POST', body: d, headers: { Accept: 'application/json' } });
+      if (!r.ok) throw new Error(String(r.status));
+      f.reset();
+      aviso.className = 'aviso-form ok'; aviso.textContent = '¡Listo! Recibimos tu mensaje. Te respondemos pronto por WhatsApp o por correo.';
+    } catch {
+      const correo = 'mailto:redinformaticatotal@gmail.com?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(texto);
+      aviso.className = 'aviso-form mal'; aviso.innerHTML = `No se pudo enviar. <a href="${correo}">Mandalo desde tu correo</a> o escribinos al <a href="https://wa.me/50589188813" target="_blank" rel="noopener">WhatsApp 8918-8813</a>.`;
+    }
+    aviso.hidden = false; boton.disabled = false; boton.innerHTML = antes;
   });
 })();
