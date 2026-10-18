@@ -51,8 +51,8 @@ p { margin: 0 0 1em; }
 .barra-in { display: flex; align-items: center; gap: 20px; height: 68px; }
 .marca { display: flex; align-items: center; gap: 9px; font-weight: 750; font-size: 1.2rem; color: var(--tinta); }
 .marca:hover { text-decoration: none; }
-.marca span { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 9px; background: var(--acento); color: #fff; font-size: 1rem; transition: transform .4s cubic-bezier(.3, 1.6, .5, 1); }
-.marca:hover span { transform: rotate(-8deg) scale(1.06); }
+.marca img { display: block; width: 32px; height: 32px; transition: transform .4s cubic-bezier(.3, 1.6, .5, 1); }
+.marca:hover img { transform: rotate(-8deg) scale(1.06); }
 .menu { display: flex; gap: 4px; margin-left: auto; }
 .menu a { position: relative; color: var(--suave); font-weight: 500; font-size: .95rem; padding: 8px 12px; border-radius: 8px; }
 .menu a:hover { color: var(--tinta); text-decoration: none; background: var(--tinte); }
